@@ -1,0 +1,99 @@
+.body {
+    overflow: hidden;
+}
+
+.banner-par {
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.ship {
+    width: 595px;
+    position: absolute;
+    left: 56%;
+    top: 125px;
+    z-index: 3;
+    animation: ship-move 16s;
+}
+
+@keyframes ship-move {
+    0% {left: -70%;}
+    100% {left: 56%;}
+}
+
+.fish {
+    width: 90px;
+    position: absolute;
+    right: -30%;
+    top: 505px;
+    z-index: 4;
+    overflow: hidden;
+    animation: fish-move 7s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes fish-move {
+    0% {right: -30%; top: 505px; transform: rotate(0deg);}
+    25% {top: 485px; transform: rotate(10deg)}
+    50% {top: 505px; transform: rotate(0deg)}
+    75% {top: 485px; transform: rotate(10deg)}
+    100% {right: 120%; top: 505px; transform: rotate(0deg)}
+}
+
+.whale {
+    width: 345px;
+    position: absolute;
+    left: -40%;
+    top: 470px;
+    z-index: 6;
+    overflow: hidden;
+    animation: whale-move 12s infinite;
+}
+
+@keyframes whale-move {
+    0% {left: -40%; top: 470px; transform: rotate(0deg);}
+    25% {top: 480px; transform: rotate(10deg)}
+    50% {top: 470px; transform: rotate(0deg)}
+    75% {top: 480px; transform: rotate(10deg)}
+    100% {left: 120%; top: 470px; transform: rotate(0deg)}
+}
+
+.porcupine {
+    width: 62px;
+    position: absolute;
+    left: 24%;
+    top: 415px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.porcupine:hover {
+    transform: scale(3);
+}
+
+.dolphin {
+    width: 250px;
+    position: absolute;
+    right: -20%;
+    top: 372px;
+    z-index: 5;
+    overflow: hidden;
+    animation: dolphin-move 6s;
+    animation-iteration-count: 3;
+    animation-delay: 14s;
+}
+
+@keyframes dolphin-move {
+    0% {right: -20%; top: 372px; transform: rotate(0deg);}
+    22% {top: 400px; transform: rotate(-10deg);}
+    32% {top: 30px; transform: rotate(90deg)}
+    34% {top: 30px; transform: rotate(-90deg)}
+    79% {top: 400px; transform: rotate(0deg)}
+    100% {right: 120%; top: 372px; transform: rotate(0deg)}
+}
